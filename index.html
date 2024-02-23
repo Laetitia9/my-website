@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="styles.css">
+<script>
+  var i = 0;
+var txt = 'IT Cybersecurity student';
+var speed = 50;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
+<title>Welcome to my landing page </title>
+</head>
+<body>
+  <div id="page-wrapper">
+    <header id="header">
+      <div class="logo">
+        <h4>L|H</h4>
+      </div>
+    </header>
+  </div>
+    <!--Nav-->
+<nav id="navbar" class="nav">
+    <ul class="nav-list">
+      <li>
+        <a href="#home-section">Home</a>
+      </li>
+      <li>
+        <a href="#welcome-section">About</a>
+      </li>
+       <li>
+        <a href="#service-section">Services</a>
+      </li>
+      <li>
+        <a href="#projects">Portfolio</a>
+      </li>
+      <li>
+        <a href="#contact">Contact</a>
+      </li>
+    </ul>
+  </nav>
+  <!--EndNav-->
+
+  <!--Welcome section-->
+<section id="welcome-section" class="welcome-section">
+  <div>
+    <h1>Laëtitia Henry</h1>
+    </div>
+    <div>
+    <p id="demo"></p>
+    </div>
+    <div>
+    <img src="Asset 1.jpg">
+    </div>
+
+  </section>
+  <!-- End Welcome section -->
+
+  <!--Button section-->
+<section>
+
+  <button onclick="typeWriter()" class="button1">DOWNLOAD CV</button>
+
+</section>
+  <!-- End Button section -->
+
+
+</body>
+</html>
